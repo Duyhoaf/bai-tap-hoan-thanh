@@ -23,7 +23,6 @@ def solve():
     lis = []
     for i in range(5, 100, 5):
         st = '{} == {} * 5'.format(i, int(i / 5))
-
         lis.append(st)
     result = lis
 

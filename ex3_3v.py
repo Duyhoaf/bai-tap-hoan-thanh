@@ -18,18 +18,14 @@ def solve():
 
     lis = []
     for i in range(1, 101):
-        if i % 3 == 0 and i % 5 == 0:
-            lis.append('FizzBuzz')
-        else:
-            if i % 3 == 0:
-                lis.append('Fizz')
-            else:
-                if i % 5 == 0:
-                    lis.append('Buzz')
-                else:
-                    lis.append(i)
-
-
+        s = ''
+        if i % 3 == 0:
+            s = s + 'Fizz'
+        if i % 5 == 0:
+            s = s + 'Buzz'
+        if s == '':
+            s = i
+        lis.append(s)
 
     result = lis
 

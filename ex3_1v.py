@@ -29,12 +29,8 @@ def solve(input_data):
 
     result = None
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
-    s = bin(input_data)
-    st = str(s)
-    lis = list(reversed(st))
-    st2 =''.join(lis)
-    vt = -1 - st2.find('1')
-    result = st[vt:]
+    s = str(bin(input_data))
+    result = s[s.rfind('1'):]
     return result
 
 def main():

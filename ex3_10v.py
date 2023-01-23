@@ -30,11 +30,9 @@ def solve(nums, target):
     # Xoá dòng raise và Viết code vào đây set result làm kết quả
     for i in nums:
         for j in nums:
-            if i != j:
-                if i+j == target:
-                    result = [i, j]
+            if i != j and i + j == target:
+                result = [ i, j]
     return result
-
 
 def main():
     nums, target = data

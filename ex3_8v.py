@@ -14,8 +14,7 @@ def solve(input_data):
     result = None
     # Xoá dòng sau và viết code vào đây set các giá trị phù hợp
     s = input_data.lower()
-    s1 = s.replace(' ', '')
-    if s1 == s1[::-1]:
+    if s == s[::-1]:
         result = input_data + ' là palindrome! '
     else:
         result = ' khong phai là palindrome!'
